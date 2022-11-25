@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+  color: beige;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+img{
+  width: 40px;
+}
+
+.slider_container{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: large;
+  font-weight: bold;
+  align-items: center;
+  background-color: gainsboro;
+  border-radius: 15px;
+  margin: 0px 15px;
+}
+
+/* ==========Media  Queries (medium devices) =============*/
+
+@media screen and (max-width: 1024px) {
+   
+}
+
+/* ==========Media  Queries (small devices) =============*/
+
+@media screen and (max-width: 600px) {
+  .App{
+    width: 95vw;
+  }
+  .slider_container{
+    flex-direction: column;
+    gap: 0rem;
+    align-items: center;
+  }
+  .slider_container>p{
+    display: none;
+  }
+}
